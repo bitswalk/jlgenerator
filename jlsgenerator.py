@@ -4,8 +4,9 @@ from os import walk
 parser = argparse.ArgumentParser("JLSGenerator")
 parser.add_argument("input", nargs='?', default=os.getcwd()+"/input/", help="Your input folder where audio samples and timing file are located.", type=str)
 parser.add_argument("output", nargs='?', default=os.getcwd()+"/output/", help="Your output folder where JLSpeech formatted slices and metadata will be located.", type=str)
-parser.add_argument("-c", nargs='?', default=0, help="Create a tar.gz archive", type=bool)
+parser.add_argument("-c", nargs='?', default=0, help="[NotYetImplemented] - Create a tar.gz archive", type=bool)
 parser.add_argument("-d", nargs='?', default=0, help="Convert wav file to mono when stereo detected", type=bool)
+parser.add_argument("-r", nargs='?', default=48000, help="[NotYetImplemented] - Convert wav sample rate to your will", type=int)
 args = parser.parse_args()
 
 print("[ {} configuration ]".format(parser.prog))
