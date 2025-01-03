@@ -1,4 +1,4 @@
-# jlgenerator
+# jlsgenerator
 JLSpeech package generator
 
 ## Installation:
